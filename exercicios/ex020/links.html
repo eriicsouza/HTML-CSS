@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /**/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: rgb(253, 0, 0);
+            text-decoration: none; /*sumir o sublinhaado do  link*/
+            font-weight:  bold; /*negrito*/
+        }
+
+        a:visited{
+            color: black; /*cor do site visitado*/
+        }
+
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow; /*cor q ffica quando clicamos no link*/
+        }
+       
+        /*pseudo-classe = : e pseudo-elemento::*/
+
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando  Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/">youtube</a></li>
+        <li><a href="https://color.adobe.com/pt/explore">adobecolor</a></li>
+        <li><a href="https://www.pichau.com.br/account">Pichau</a></li>
+        
+    </ul>
+</body>
+</html>
